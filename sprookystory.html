@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body.dark{
+        color: white;
+        background-color: black;
+
+    }
+    button{
+        display: block;
+        padding: 5px;
+    }
+    .textEntry{
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+        
+</style>
+<body>
+    <h1>The basement</h1>
+        <p id="story">
+            I went to find my freind and he was in the basement.
+        </p>
+        <button onclick="goDark()">Get in the mood.</button>
+        <div class="textEntry">Type your name if you dare: <input type="text"
+         id="name"></div>   
+         <button onclick="TypeandScream()">Please please don't click me</button>
+          <button onclick="finishthestory()">Tell me what happened</button>
+
+          <script>
+
+            function TypeandScream(){
+                var personName = document.getElementById("name").value ;
+                alert("I told you not to do that. " + personName)
+            }
+
+            function goDark(){
+                    document.body.className = "dark";
+                }
+
+                function finishthestory(){
+                    document.getElementById("story").innerHTML ="So, ii carefully searched the damp duengon, and There you are !"
+                }
+
+          </script>
+
+          
+    </body>
+</html>
