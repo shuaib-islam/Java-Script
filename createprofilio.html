@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page</title>
+
+    <style>
+
+        body{
+            text-align: center;
+        }
+        nav{
+            background-color: bisque;
+            padding: 10px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 2px;
+            padding: 2px;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+        }
+        li a:hover{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <li><a href="">Home</a></li>
+
+            <li><a href="">About</a></li>
+
+            <li><a href="">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <h2>Interesting Information</h2>
+
+    <img src="./2.jpg" alt="">
+
+    <br />
+
+    <button onclick="tiger()">Read More!</button>
+
+    <p id="tiger-info"></p>
+
+    <img src="6aofsvaglm_Medium_WW226365.jpg" alt="">
+
+    <br />
+
+    <button onclick="lion()">Read More!</button>
+
+    <p id="lion-info"></p>
+
+    <img src="download (2).jpeg" alt="">
+
+    <script>
+        function tiger(){
+            document.getElementById("tiger-info").innerHTML = "The tiger(Panthera tigris) is a large cat and a member of the genus Panthera native to Asia.It has a powerful, muscular body with a large head and paws, a long tail and orange fur with black, mostly vertical stripes.It is traditionally classified into nine recent subspecies, though some recognise only two subspecies, mainland Asian tigers and the island tigers of the Sunda Islands."
+        }
+
+        function lion(){
+            document.getElementById("lion-info").innerHTML = "A lion (Panthera leo) is a large, muscular cat native to Africa and India, known as the beast of the forest for its power and apex predator status. Characterized by its golden coat and the distinctive mane of adult males, lions live in social groups called prides. They primarily inhabit grasslands and savannas, hunting large prey, and their scientific classification places them in the genus Panthera. "
+        }
+    </script>
+
+</body>
+
+</html>
