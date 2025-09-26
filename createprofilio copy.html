@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page</title>
+
+    <style>
+
+        body{
+            text-align: center;
+        }
+        nav{
+            background-color: bisque;
+            padding: 10px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 2px;
+            padding: 2px;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+        }
+        li a:hover{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <li><a href="">Home</a></li>
+
+            <li><a href="">About</a></li>
+
+            <li><a href="">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <h2>Interesting Information</h2>
+
+    <img src="./2.jpg" alt="">
+
+    <br />
+
+    <button onclick="tiger()">Read More!</button>
+
+    <p id="tiger-info"></p>
+
+    <img src="6aofsvaglm_Medium_WW226365.jpg" alt="">
+
+    <br />
+
+    <button onclick="lion()">Read More!</button>
+
+    <p id="lion-info"></p>
+
+    <img src="download (2).jpeg" alt="">
+
+    <script>
+        function tiger(){
+            document.getElementById("badger-info").innerHTML = "Badgers are small to medium-sized mammals known for their stocky bodies, short legs, and powerful digging claws. They belong to the Mustelidae family, which also includes otters, weasels, and wolverines. Found across North America, Europe, and parts of Asia and Africa, badgers typically live in underground burrows called setts, which they dig themselves and often expand into complex tunnel systems. They are mostly nocturnal and omnivorous, feeding on a variety of foods such as insects, small mammals, fruits, and roots—though some species, like the European badger, are especially fond of earthworms. Badgers have a reputation for being fierce when threatened and are capable of defending themselves effectively against larger predators. In North America, the American badger is particularly noted for its aggressive digging skills and solitary lifestyle. Despite their somewhat grumpy appearance, badgers play important ecological roles, such as controlling pest populations and aerating the soil."
+        }
+
+        function lion(){
+            document.getElementById("capybara-info").innerHTML = "Capybaras are the largest rodents in the world, native to South America, where they inhabit savannas, dense forests, and areas near bodies of water such as rivers and swamps. Social and gentle by nature, capybaras live in groups that can range from a few individuals to as many as 100 during the dry season when water is scarce. They are semi-aquatic mammals, excellent swimmers, and can hold their breath underwater for up to five minutes. Their webbed feet and eyes positioned high on their heads help them stay alert while mostly submerged. Capybaras are herbivores, feeding mainly on grasses and aquatic plants, and their digestive systems are adapted to a high-fiber diet. They are also known to practice coprophagy—eating their own feces—to fully digest the tough plant material. While wild capybaras are wary of predators such as jaguars, caimans, and anacondas, in human care they are often calm and sociable, sometimes even forming bonds with other animals."
+        }
+    </script>
+
+</body>
+
+</html>
